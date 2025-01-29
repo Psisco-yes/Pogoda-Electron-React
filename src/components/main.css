@@ -1,0 +1,304 @@
+html {
+    min-width: 456px;
+    zoom: 120%;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    background-color: #555;
+}
+
+.credits {
+    color: #ccc;
+    text-align: center;
+    margin: auto;
+}
+
+.main {
+    margin: 10px;
+}
+
+.searchDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.searchDiv table {
+    margin: auto;
+    text-align: center;
+    border: 2px solid #ccc;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.searchDiv table button {
+    background-color: #fff;
+    color: #0950C3;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    width: calc(100% - 8px);
+    height: 2rem;
+    margin: 4px;
+    transition: 0.3s;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.searchDiv table button:hover {
+    background-color: #0950C3;
+    box-shadow: 0 0 0 5px #3b83f65f;
+    color: #fff;
+}
+
+.searchLabel {
+    text-align: right;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.searchInput {
+    text-align: left;
+}
+
+.searchInput input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #555;
+    outline: none;
+    transition: 0.3s;
+    height: 22px;
+}
+
+.searchInput input:focus {
+    border-color: #0950C3;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.errorBox {
+    margin: auto;
+    color: #FFFF61;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.weatherBoxNoData {
+    display: flex;
+    justify-content: center;
+    background-color: #ccc;
+    width: fit-content;
+    margin: 0 auto 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+.weatherBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.currentBox {
+    background-color: #ccc;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 3px;
+}
+
+.dailyBox {
+    margin: 3px;
+}
+
+.boundingWrapper {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.boundingBoxes {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: #fff;
+}
+
+.boundingBoxes:first-child {
+    padding: 1px 5px 1px 10px;
+    border-radius: 5px 5px 0 5px;
+}
+
+.lilFixer {
+    background-color: #ccc;
+}
+
+.tempBox,
+.humidityBox,
+.dailyTempsBox {
+    -webkit-text-stroke: 2px;
+    font-weight: bold;
+}
+
+.tempBox {
+    margin-top: -5px;
+    margin-right: 2px;
+    font-size: 40px;
+    display: flex;
+}
+
+.humidityBox {
+    font-size: 28px;
+    margin-left: -7px;
+    display: flex;
+}
+
+.dateBox {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 0 3px 5px;
+    border-radius: 0 0 0 5px;
+    background-color: #ccc;
+    margin-top: -4px;
+}
+
+.windInfoBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.windDirectionIcon,
+.iconBox {
+    display: flex;
+    justify-content: center;
+}
+
+.windData {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+
+.iconsBoxes {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 5px 5px 0;
+    margin-left: -5px;
+    border-radius: 0 5px 5px 0;
+    background-color: white;
+}
+
+.iconBox {
+    margin: 0 auto;
+}
+
+.windData img {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-bottom: -3px;
+}
+
+.windDirectionIcon {
+    border: #10e36c 3px solid;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.weatherIcon {
+    width: 56px;
+    height: 56px;
+}
+
+.tempBox img,
+.humidityBox img {
+    width: 40px;
+    height: 40px;
+}
+
+.tempBox img {
+    align-self: self-end;
+    margin: 0 0 5px -15px;
+}
+
+.dailyWeatherBox {
+    display: flex;
+    border: 5px solid #ccc;
+    border-radius: 5px;
+    background-color: #ccc;
+    flex-direction: row;
+    margin-bottom: 6px;
+    justify-content: space-between;
+}
+
+.dailyIconBox {
+    display: flex;
+    justify-content: center;
+    padding: 2px 3px;
+    margin-left: auto;
+}
+
+.dailyTempsBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    -webkit-text-stroke: 1px;
+    font-size: 20px;
+    border-radius: 5px 0 0 5px;
+    padding-left: 2px;
+}
+
+.dailyTempsBox div {
+    display: flex;
+}
+
+.dailyTempsBox img {
+    width: 28px;
+    height: 28px;
+}
+
+.dailyWindDirection {
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 5px;
+    padding-right: 3px;
+}
+
+.dailyMiscBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.dailyDateBox {
+    background-color: white;
+    font-weight: bold;
+}
+
+.dailyDateBox div {
+    border-bottom-left-radius: 5px;
+    background-color: #ccc;
+    padding: 0 0 2px 5px;
+    margin-top: -4px;
+}
+
+.dailyWindData {
+    border-radius: 0 5px 5px 0;
+    margin: 0;
+    height: 100%;
+    background-color: white;
+}
+
+.dailyWrapper {
+    border-radius: 5px 5px 0 5px;
+    display: flex;
+    background-color: white;
+    width: 100%;
+}
